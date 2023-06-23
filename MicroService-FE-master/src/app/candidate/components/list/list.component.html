@@ -1,0 +1,31 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Name</th>
+    <th scope="col">Phone</th>
+    <th scope="col">Email</th>
+    <th scope="col">Education</th>
+    <th scope="col">Experience</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let row of candidats">
+    <th scope="row">{{ row.id }}</th>
+    <td>{{ row.name }}</td>
+    <td>{{ row.phone }}</td>
+    <td>{{ row.email }}</td>
+    <td>
+      <ul>
+        <li *ngFor="let exp of row.experience">{{ exp.title }}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let educ of row.education">{{ educ.name }}</li>
+      </ul>
+    </td>
+  </tr>
+
+  </tbody>
+</table>

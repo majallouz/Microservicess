@@ -1,0 +1,27 @@
+{
+  "/evaluations": {
+    "target": "http://localhost:8085/",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/candidatures": {
+    "target": "http://localhost:8054/",
+    "secure": false,
+    "changeOrigin": true
+  },
+    "/employee": {
+    "target": "http://localhost:8054/",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/v1": {
+    "target": "http://localhost:8054/",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/offres": {
+  "target": "http://localhost:8054/",
+  "secure": false,
+  "changeOrigin": true
+  }
+}

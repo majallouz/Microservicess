@@ -1,0 +1,36 @@
+<div class="pt-5 formContainer">
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Note CV</th>
+      <th scope="col">lastName</th>
+      <th scope="col">email</th>
+      <th scope="col">Description</th>
+      <th scope="col">profession</th>
+	  <th scope="col">salary</th>
+	  <th scope="col">departement</th>
+	  
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let emp of listEmp">
+      <th scope="row">{{ emp.id }}</th>
+      <td>{{ emp.noteCV }}</td>
+      <td>{{ emp.lastName }}</td>
+      <td>{{ emp.email }}</td>
+      <td>{{ emp.description }}</td>
+	  <td>{{ emp.profession }}</td>
+	  <td>{{ emp.salary }}</td>
+	  <td>{{ emp.departement }}</td>
+      <td class="d-flex">
+        <button type="button" (click)="edit(emp.id)" class="btn btn-secondary mx-3">Edit</button>
+        <button type="button" (click)="delete(emp.id)"  class="btn btn-danger">Delete</button>
+
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

@@ -1,0 +1,36 @@
+<div class="formContainer pt-5">
+    <div class="form-group my-3">
+      <label for="exampleInputEmail5">ID</label>
+      <input type="text" class="form-control" [disabled]="true" [(ngModel)]="offer.id" id="exampleInputEmail5" placeholder="ID">
+    </div>
+  
+    <div class="form-group my-3">
+      <label for="exampleInputEmail1">Intitulé Offre</label>
+      <input type="text" class="form-control" [(ngModel)]="offer.intitule_offre" id="exampleInputEmail1" placeholder="Intitulé Offre">
+    </div>
+  
+    <div class="form-group my-3">
+      <label for="exampleInputPassword1">Requirements</label>
+      <input type="text" class="form-control" [(ngModel)]="offer.requirements" id="exampleInputPassword1" placeholder="Requirements">
+    </div>
+  
+  
+    <div class="form-group my-3">
+      <label for="exampleInputPassword3">Description</label>
+      <input type="text" class="form-control" [(ngModel)]="offer.Description" id="exampleInputPassword3" placeholder="Description">
+    </div>
+    <div class="form-group my-3">
+      <label for="exampleInputPassword2">Experience</label>
+      <input type="text" class="form-control" [(ngModel)]="offer.experience" id="exampleInputPassword2" placeholder="Experience">
+    </div>
+    <div class="form-group my-3">
+      <label for="exampleInputPassword2">Salaire</label>
+      <input type="text" class="form-control" [(ngModel)]="offer.salaire" id="exampleInputPassword2" placeholder="Salaire">
+    </div>
+      
+    <div class="form-group my-3 buttonContainer">
+      <button type="submit" (click)="save()" class="btn btn-primary px-4">Submit</button>
+    </div>
+  
+  </div>
+  

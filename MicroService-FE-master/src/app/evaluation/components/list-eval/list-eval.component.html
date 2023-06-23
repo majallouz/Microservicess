@@ -1,0 +1,30 @@
+<div class="pt-5 formContainer">
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Note CV</th>
+      <th scope="col">Note RH</th>
+      <th scope="col">Note Technique</th>
+      <th scope="col">Description</th>
+      <th scope="col">Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let eval of listEval">
+      <th scope="row">{{ eval.id }}</th>
+      <td>{{ eval.noteCV }}</td>
+      <td>{{ eval.noteRH }}</td>
+      <td>{{ eval.noteTechnique }}</td>
+      <td>{{ eval.description }}</td>
+      <td class="d-flex">
+        <button type="button" (click)="edit(eval.id)" class="btn btn-secondary mx-3">Edit</button>
+        <button type="button" (click)="delete(eval.id)"  class="btn btn-danger">Delete</button>
+
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

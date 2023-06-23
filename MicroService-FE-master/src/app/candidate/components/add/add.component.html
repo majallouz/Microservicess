@@ -1,0 +1,55 @@
+<div>
+  <div class="form-group my-3">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="candidat.name" placeholder="Name">
+  </div>
+  <div class="form-group my-3">
+    <label for="exampleInputPassword1">Phone</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="candidat.phone"  placeholder="Phone">
+  </div>
+  <div class="form-group my-3">
+    <label for="exampleInputPassword2">Email</label>
+    <input type="text" class="form-control" id="exampleInputPassword2" [(ngModel)]="candidat.email"  placeholder="Email">
+  </div>
+  <div class="form-row d-flex my-3" *ngFor="let educ of candidat.education ">
+    <div class="form-group col-md-4">
+      <label for="inputCity">Education</label>
+      <input type="text" class="form-control" id="inputCity" [(ngModel)]="educ.name"  placeholder="Name">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="sdate">Start Date</label>
+      <input type="date" class="form-control" [(ngModel)]="educ.date_start" id="sdate">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="edate">End Date</label>
+      <input type="date" class="form-control" [(ngModel)]="educ.date_end" id="edate">
+    </div>
+  </div>
+  <div class="row" style="width: 100%; justify-content: right">
+    <button type="submit" style="width: 3%" class="btn btn-primary" (click)="addEducation()">+</button>
+  </div>
+
+
+  <div class="form-row d-flex my-3" *ngFor="let exp of candidat.experience ">
+    <div class="form-group col-md-4">
+      <label for="inputCity2">Experience</label>
+      <input type="text" class="form-control" id="inputCity2" [(ngModel)]="exp.title" placeholder="Title">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="sdate2">Organization</label>
+      <input type="text" class="form-control" [(ngModel)]="exp.organization" id="sdate2">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="edate2">End Date</label>
+      <input type="date" class="form-control" [(ngModel)]="exp.date_start" id="edate2">
+    </div>
+  </div>
+  <div class="row" style="width: 100%; justify-content: right">
+    <button type="submit" style="width: 3%" class="btn btn-primary" (click)="addExperience()">+</button>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="save()">Submit</button>
+</div>

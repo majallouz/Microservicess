@@ -1,0 +1,42 @@
+<div class="formContainer pt-5">
+  <div class="form-group my-3">
+    <label for="exampleInputEmail5">ID</label>
+    <input type="text" class="form-control" [disabled]="true" [(ngModel)]="emp.id" id="exampleInputEmail5" placeholder="ID">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="exampleInputEmail1">Note CV</label>
+    <input type="text" class="form-control" [(ngModel)]="emp.noteCV" id="exampleInputEmail1" placeholder="Note CV">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="exampleInputPassword1">last Name</label>
+    <input type="text" class="form-control" [(ngModel)]="emp.lastName" id="exampleInputPassword1" placeholder="last Name">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="exampleInputPassword2">email</label>
+    <input type="text" class="form-control" [(ngModel)]="emp.email" id="exampleInputPassword2" placeholder="email">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="exampleInputPassword3">Description</label>
+    <input type="text" class="form-control" [(ngModel)]="emp.description" id="exampleInputPassword3" placeholder="Description">
+  </div>
+  <div class="form-group my-3">
+    <label for="exampleInputPassword2">profession</label>
+    <input type="text" class="form-control" [(ngModel)]="emp.profession" id="exampleInputPassword2" placeholder="profession">
+  </div>
+  <div class="form-group my-3">
+    <label for="exampleInputPassword2">salary</label>
+    <input type="text" class="form-control" [(ngModel)]="emp.salary" id="exampleInputPassword2" placeholder="salary">
+  </div>
+    <div class="form-group my-3">
+    <label for="exampleInputPassword2">departement</label>
+    <input type="text" class="form-control" [(ngModel)]="emp.departement" id="exampleInputPassword2" placeholder="departement">
+  </div>
+  <div class="form-group my-3 buttonContainer">
+    <button type="submit" (click)="save()" class="btn btn-primary px-4">Submit</button>
+  </div>
+
+</div>
