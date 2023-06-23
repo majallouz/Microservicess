@@ -1,0 +1,33 @@
+<div class="formContainer pt-5">
+  <div class="form-group my-3">
+    <label for="candidateId">Candidature ID </label>
+    <input type="text" class="form-control" [(ngModel)]="candidature.id" id="candidatureId" placeholder="Candidate ID" disabled="true">
+  </div>
+  <div class="form-group my-3">
+    <label for="candidateId">Candidate ID </label>
+    <input type="text" class="form-control" [(ngModel)]="candidature.candidateId" id="candidateId" placeholder="Candidate ID">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="offreId">Offre ID</label>
+    <input type="text" class="form-control" [(ngModel)]="candidature.offreId" id="offreId" placeholder="Offre ID">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="evaluationId">Evaluation ID</label>
+    <input type="text" class="form-control" [(ngModel)]="candidature.evaluationId" id="evaluationId" placeholder="Evaluation ID">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="status">Status</label>
+    <input type="text" class="form-control" [(ngModel)]="candidature.status" id="status" placeholder="Status">
+  </div>
+  <div class="form-group my-3">
+    <label for="creationDate">Creation Date</label>
+    <input type="text" class="form-control" [(ngModel)]="candidature.creationDate" id="creationDate" placeholder="Creation Date">
+  </div>
+  <div class="form-group my-3 buttonContainer">
+    <button type="submit" (click)="save()" class="btn btn-primary px-4">Save</button>
+  </div>
+</div>
+

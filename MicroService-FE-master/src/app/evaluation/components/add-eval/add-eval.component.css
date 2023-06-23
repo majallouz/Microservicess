@@ -1,0 +1,8 @@
+::ng-deep .formContainer{
+  width: 60%;
+  margin: auto;
+}
+
+::ng-deep .buttonContainer{
+  text-align: center;
+}

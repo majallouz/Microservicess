@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="authService.isLoggedIn">
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <div class="dropdown">
+        <button class="dropbtn">Evaluation</button>
+        <div class="dropdown-content">
+          <a href="/#/eval/listEval">List</a>
+          <a href="/#/eval/addEval">Add</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Candidatures</button>
+        <div class="dropdown-content">
+          <a href="/#/candidatures/listCandidatures">List</a>
+          <a href="/#/candidatures/addCandidature">Add</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Employees</button>
+        <div class="dropdown-content">
+          <a href="/#/emp/listEmp">List</a>
+          <a href="/#/emp/addEmp">Add</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Offers</button>
+        <div class="dropdown-content">
+          <a href="/#/offer/listOffer">List</a>
+          <a href="/#/offer/addOffer">Add</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">User</button>
+        <div class="dropdown-content">
+          <a href="/#/login" (click)='logout()'>Log out</a>
+          <a href="/#/register">Add user</a>
+        </div>
+      </div>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

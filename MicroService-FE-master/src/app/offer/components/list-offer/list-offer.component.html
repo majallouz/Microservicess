@@ -1,0 +1,33 @@
+<div class="pt-5 formContainer">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Intitulé Offre</th>
+        <th scope="col">Requirements</th>
+        <th scope="col">Description</th>
+        <th scope="col">Experience</th>
+        <th scope="col">Salaire</th>
+        
+  
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let offer of listOffer">
+        <th scope="row">{{ offer.id }}</th>
+        <td>{{ offer.intitule_offre }}</td>
+        <td>{{ offer.requirements}}</td>
+        <td>{{ offer.Description}}</td>
+        <td>{{ offer.experience}}</td>
+        <td>{{ offer.salaire }}</td>
+        <td class="d-flex">
+          <button type="button" (click)="edit(offer.id)" class="btn btn-secondary mx-3">Edit</button>
+          <button type="button" (click)="delete(offer.id)"  class="btn btn-danger">Delete</button>
+  
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  
+  </div>
+  

@@ -1,0 +1,25 @@
+<div class="formContainer pt-5">
+  <div class="form-group my-3">
+    <label for="exampleInputEmail1">Note CV</label>
+    <input type="text" class="form-control" [(ngModel)]="eval.noteCV" id="exampleInputEmail1" placeholder="Note CV">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="exampleInputPassword1">Note RH</label>
+    <input type="text" class="form-control" [(ngModel)]="eval.noteRH" id="exampleInputPassword1" placeholder="Note RH">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="exampleInputPassword2">Note Technique</label>
+    <input type="text" class="form-control" [(ngModel)]="eval.noteTechnique" id="exampleInputPassword2" placeholder="Note Technique">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="exampleInputPassword3">Description</label>
+    <input type="text" class="form-control" [(ngModel)]="eval.description" id="exampleInputPassword3" placeholder="Description">
+  </div>
+  <div class="form-group my-3 buttonContainer">
+    <button type="submit" (click)="save()" class="btn btn-primary px-4">Submit</button>
+  </div>
+
+</div>

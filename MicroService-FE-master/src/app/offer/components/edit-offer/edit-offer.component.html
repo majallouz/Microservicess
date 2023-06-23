@@ -1,0 +1,33 @@
+<div class="formContainer pt-5">
+  <div class="form-group my-3">
+    <label for="candidateId">ID </label>
+    <input type="text" class="form-control" [(ngModel)]="offer.id" id="id" placeholder="ID" disabled="true">
+  </div>
+  <div class="form-group my-3">
+    <label for="candidateId">Candidate ID </label>
+    <input type="text" class="form-control" [(ngModel)]="offer.intitule_offre" id="intitulé_offre" placeholder="Intitulé offre">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="offreId">Requirements</label>
+    <input type="text" class="form-control" [(ngModel)]="offer.requirements" id="requirements" placeholder="Requirements">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="evaluationId">Description</label>
+    <input type="text" class="form-control" [(ngModel)]="offer.Description" id="Description" placeholder="Description">
+  </div>
+
+  <div class="form-group my-3">
+    <label for="status">Experience</label>
+    <input type="text" class="form-control" [(ngModel)]="offer.experience" id="experience" placeholder="Experience">
+  </div>
+  <div class="form-group my-3">
+    <label for="creationDate">Salaire</label>
+    <input type="text" class="form-control" [(ngModel)]="offer.salaire" id="salaire" placeholder="Salaire">
+  </div>
+  <div class="form-group my-3 buttonContainer">
+    <button type="submit" (click)="save()" class="btn btn-primary px-4">Save</button>
+  </div>
+</div>
+
