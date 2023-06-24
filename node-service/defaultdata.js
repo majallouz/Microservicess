@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'Houssem Zerai',
-  email: 'houssemzerai@gmail.com',
-  phone: '+216 23049235',
+  name: 'Yasmine Boutrif',
+  email: 'yasmineboutrif@gmail.com',
+  phone: '+216 55555555',
   skills: [
     'Postgresql', 'Rest',
     'English',    'Docker',       
