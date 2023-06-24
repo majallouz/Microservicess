@@ -1,0 +1,8 @@
+ecommerce\cartservice\model\Evaluation.class
+ecommerce\cartservice\service\EvaluationServiceImpl.class
+ecommerce\cartservice\controller\EvaluationController.class
+ecommerce\cartservice\exception\EvaluationNotFoundException.class
+ecommerce\cartservice\EvaluationServiceApplication.class
+ecommerce\cartservice\service\EvaluationService.class
+ecommerce\cartservice\config\SwaggerConfiguration.class
+ecommerce\cartservice\repository\EvaluationRepository.class
